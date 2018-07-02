@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/navHomeFrag"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navStoreFrag"
+        android:icon="@drawable/ic_store_black_24dp"
+        android:title="Store" />
+
+    <item
+        android:id="@+id/navBookmarksFrag"
+        android:icon="@drawable/ic_bookmark_black_24dp"
+        android:title="Bookmarks" />
+
+    <item
+        android:id="@+id/navHistoryFrag"
+        android:icon="@drawable/ic_history_black_24dp"
+        android:title="History" />
+
 </menu>
