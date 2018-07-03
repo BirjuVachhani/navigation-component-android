@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_drawer"
+    app:startDestination="@+id/navHomeFrag">
+
+    <fragment
+        android:id="@+id/navHomeFrag"
+        android:name="com.birjuvachhani.navigationcomponentdemo.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navStoreFrag"
+        android:name="com.birjuvachhani.navigationcomponentdemo.StoreFragment"
+        android:label="Store"
+        tools:layout="@layout/fragment_store" />
+    <fragment
+        android:id="@+id/navBookmarksFrag"
+        android:name="com.birjuvachhani.navigationcomponentdemo.BookmarksFragment"
+        android:label="Bookmarks"
+        tools:layout="@layout/fragment_bookmarks" />
+    <fragment
+        android:id="@+id/navHistoryFrag"
+        android:name="com.birjuvachhani.navigationcomponentdemo.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+
+</navigation>

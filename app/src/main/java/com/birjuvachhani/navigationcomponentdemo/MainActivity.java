@@ -9,11 +9,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.NavigationUI;
+
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar mToolBar;
     private NavigationView nvMain;
     private DrawerLayout mDrawerLayout;
+    private NavController navController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +27,11 @@ public class MainActivity extends AppCompatActivity {
         mToolBar = findViewById(R.id.toolBar);
         nvMain = findViewById(R.id.nvMain);
         mDrawerLayout = findViewById(R.id.drawerLayout);
+        navController = Navigation.findNavController(this, R.id.mainNavHostFrag);
         setSupportActionBar(mToolBar);
         setDrawer();
+        NavigationUI.setupWithNavController(nvMain, navController);
+        NavigationUI.setupActionBarWithNavController(this, navController, mDrawerLayout);
     }
 
     private void setDrawer() {

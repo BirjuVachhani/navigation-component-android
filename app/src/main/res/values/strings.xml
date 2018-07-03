@@ -8,4 +8,12 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_desc">Nothing to show at this moment.</string>
+    <string name="home">Home</string>
+    <string name="store">Store</string>
+    <string name="store_desc">No items are available to purchase at the moment.</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="desc_bookmarks">You don\'t have bookmarks yet.</string>
+    <string name="history">History</string>
+    <string name="desc_history">No history found. Looks like you haven\'t browsed anything yet.</string>
 </resources>
