@@ -24,10 +24,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         mToolBar = findViewById(R.id.toolBar);
         nvMain = findViewById(R.id.nvMain);
         mDrawerLayout = findViewById(R.id.drawerLayout);
         navController = Navigation.findNavController(this, R.id.mainNavHostFrag);
+
         setSupportActionBar(mToolBar);
         setDrawer();
         NavigationUI.setupWithNavController(nvMain, navController);
@@ -47,6 +49,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        return super.onOptionsItemSelected(item);
+        return NavigationUI.onNavDestinationSelected(item, navController);
     }
 }

@@ -21,4 +21,9 @@
         android:icon="@drawable/ic_history_black_24dp"
         android:title="History" />
 
+    <item
+        android:id="@+id/navDemoFrag"
+        android:icon="@drawable/ic_public_black_24dp"
+        android:title="Demo" />
+
 </menu>

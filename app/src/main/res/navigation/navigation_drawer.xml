@@ -9,7 +9,11 @@
         android:id="@+id/navHomeFrag"
         android:name="com.birjuvachhani.navigationcomponentdemo.HomeFragment"
         android:label="Home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_demo_frag"
+            app:destination="@id/navDemoFrag" />
+    </fragment>
     <fragment
         android:id="@+id/navStoreFrag"
         android:name="com.birjuvachhani.navigationcomponentdemo.StoreFragment"
@@ -25,5 +29,15 @@
         android:name="com.birjuvachhani.navigationcomponentdemo.HistoryFragment"
         android:label="History"
         tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/navDemoFrag"
+        android:name="com.birjuvachhani.navigationcomponentdemo.DemoFragment"
+        android:label="Demo"
+        tools:layout="@layout/fragment_demo" />
+    <activity
+        android:id="@+id/navSettingsActivity"
+        android:name="com.birjuvachhani.navigationcomponentdemo.SettingsActivity"
+        android:label="Settings"
+        tools:layout="@layout/activity_settings" />
 
 </navigation>
