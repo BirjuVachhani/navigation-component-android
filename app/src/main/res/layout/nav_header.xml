@@ -44,6 +44,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:gravity="center"
         android:text="@string/user_email"
         android:textAlignment="center"
         android:textColor="@color/textSecondary"

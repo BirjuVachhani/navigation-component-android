@@ -20,8 +20,8 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
-    implementation 'android.arch.navigation:navigation-fragment:1.0.0-alpha01'
-    implementation 'android.arch.navigation:navigation-ui:1.0.0-alpha01'
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0-alpha02'
+    implementation 'android.arch.navigation:navigation-ui:1.0.0-alpha02'
     implementation 'com.intuit.sdp:sdp-android:1.0.5'
     implementation 'com.squareup.picasso:picasso:2.71828'
 }
