@@ -16,4 +16,18 @@
     <string name="desc_bookmarks">You don\'t have bookmarks yet.</string>
     <string name="history">History</string>
     <string name="desc_history">No history found. Looks like you haven\'t browsed anything yet.</string>
+    <string name="settings">Settings</string>
+    <string name="second_sample">Second Sample</string>
+    <string name="sample_one_desc">There\'s nothing here too.</string>
+    <string name="sample_fragment_one">Sample Fragment One</string>
+    <string name="there_s_nothing_here_to_navigate_to_second_sample_click_below_button">There\'s nothing here. To navigate to second sample click below button.</string>
+    <string name="sample_fragment_two">Sample Fragment Two</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="refresh">Refresh</string>
+    <string name="songs">Songs</string>
+    <string name="albums">Albums</string>
+    <string name="artists">Artists</string>
 </resources>

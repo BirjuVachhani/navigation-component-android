@@ -33,11 +33,36 @@
         android:id="@+id/navDemoFrag"
         android:name="com.birjuvachhani.navigationcomponentdemo.DemoFragment"
         android:label="Demo"
-        tools:layout="@layout/fragment_demo" />
+        tools:layout="@layout/fragment_demo">
+
+        <action
+            android:id="@+id/action_to_sampleFragmentOne"
+            app:destination="@id/sampleFragmentOne" />
+        <action
+            android:id="@+id/action_navDemoFrag_to_bottomNavigationActivity"
+            app:destination="@id/bottomNavigationActivity" />
+
+    </fragment>
     <activity
         android:id="@+id/navSettingsActivity"
         android:name="com.birjuvachhani.navigationcomponentdemo.SettingsActivity"
         android:label="Settings"
         tools:layout="@layout/activity_settings" />
 
+    <fragment
+        android:id="@+id/sampleFragmentOne"
+        android:name="com.birjuvachhani.navigationcomponentdemo.SampleFragmentOne"
+        android:label="Sample One"
+        tools:layout="@layout/fragment_sample_one" />
+
+    <fragment
+        android:id="@+id/sampleFragmentTwo"
+        android:name="com.birjuvachhani.navigationcomponentdemo.SampleFragmentTwo"
+        android:label="Sample Two"
+        tools:layout="@layout/fragment_sample_two" />
+    <activity
+        android:id="@+id/bottomNavigationActivity"
+        android:name="com.birjuvachhani.navigationcomponentdemo.BottomNavigationActivity"
+        android:label="activity_bottom_navigation"
+        tools:layout="@layout/activity_bottom_navigation" />
 </navigation>

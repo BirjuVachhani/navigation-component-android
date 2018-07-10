@@ -3,7 +3,6 @@ package com.birjuvachhani.navigationcomponentdemo;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -31,14 +30,8 @@ public class MainActivity extends AppCompatActivity {
         navController = Navigation.findNavController(this, R.id.mainNavHostFrag);
 
         setSupportActionBar(mToolBar);
-        setDrawer();
         NavigationUI.setupWithNavController(nvMain, navController);
         NavigationUI.setupActionBarWithNavController(this, navController, mDrawerLayout);
-    }
-
-    private void setDrawer() {
-        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, mToolBar, R.string.open, R.string.close);
-        actionBarDrawerToggle.syncState();
     }
 
     @Override
@@ -50,5 +43,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         return NavigationUI.onNavDestinationSelected(item, navController);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        return NavigationUI.navigateUp(mDrawerLayout,
+                Navigation.findNavController(this, R.id.mainNavHostFrag));
     }
 }
