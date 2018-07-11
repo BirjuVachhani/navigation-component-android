@@ -41,6 +41,9 @@
         <action
             android:id="@+id/action_navDemoFrag_to_bottomNavigationActivity"
             app:destination="@id/bottomNavigationActivity" />
+        <action
+            android:id="@+id/action_navDemoFrag_to_safeArgumentsFragment"
+            app:destination="@id/safeArgumentsFragment" />
 
     </fragment>
     <activity
@@ -63,6 +66,21 @@
     <activity
         android:id="@+id/bottomNavigationActivity"
         android:name="com.birjuvachhani.navigationcomponentdemo.BottomNavigationActivity"
-        android:label="activity_bottom_navigation"
+        android:label="Bottom Navigation Activity"
         tools:layout="@layout/activity_bottom_navigation" />
+    <fragment
+        android:id="@+id/passArgumentsFragment"
+        android:name="com.birjuvachhani.navigationcomponentdemo.PassArgumentsFragment"
+        android:label="Safe Arguments"
+        tools:layout="@layout/fragment_pass_arguments" />
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.birjuvachhani.navigationcomponentdemo.WelcomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_pass_arguments" />
+    <fragment
+        android:id="@+id/welcomeFragment2"
+        android:name="com.birjuvachhani.navigationcomponentdemo.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" />
 </navigation>

@@ -17,6 +17,7 @@ public class DemoFragment extends Fragment {
     private Button btnNavigationWithAction;
     private Button btnDeepLink;
     private Button btnBottomBarNavigation;
+    private Button btnSafeArguments;
 
     public DemoFragment() {
     }
@@ -29,6 +30,7 @@ public class DemoFragment extends Fragment {
         btnDeepLink = view.findViewById(R.id.btnDeepLinking);
         btnNavigationToDestination = view.findViewById(R.id.btnNavigationUsingDestination);
         btnNavigationWithAction = view.findViewById(R.id.btnNavigationWithAction);
+        btnSafeArguments = view.findViewById(R.id.btnSafeArguments);
 
         btnNavigationToDestination.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +42,7 @@ public class DemoFragment extends Fragment {
         btnNavigationWithAction.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_to_sampleFragmentOne));
 
         btnBottomBarNavigation.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_navDemoFrag_to_bottomNavigationActivity));
+        btnSafeArguments.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_navDemoFrag_to_safeArgumentsFragment));
         return view;
     }
 }
