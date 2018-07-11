@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@+id/navSongsFragment">
+
+    <fragment
+        android:id="@+id/navSongsFragment"
+        android:name="com.birjuvachhani.navigationcomponentdemo.SongsFragment"
+        android:label="Songs"
+        tools:layout="@layout/fragment_songs">
+        <action
+            android:id="@+id/action_navSongsFragment_to_refreshFragment"
+            app:destination="@id/refreshFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navAlbumsFragment"
+        android:name="com.birjuvachhani.navigationcomponentdemo.AlbumsFragment"
+        android:label="Songs"
+        tools:layout="@layout/fragment_albums">
+        <action
+            android:id="@+id/action_navAlbumsFragment_to_refreshFragment"
+            app:destination="@id/refreshFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navArtistsFragment"
+        android:name="com.birjuvachhani.navigationcomponentdemo.ArtistsFragment"
+        android:label="Songs"
+        tools:layout="@layout/fragment_artists">
+        <action
+            android:id="@+id/action_navArtistsFragment_to_refreshFragment"
+            app:destination="@id/refreshFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/refreshFragment"
+        android:name="com.birjuvachhani.navigationcomponentdemo.RefreshFragment"
+        android:label="fragment_refresh"
+        tools:layout="@layout/fragment_refresh" />
+
+</navigation>
