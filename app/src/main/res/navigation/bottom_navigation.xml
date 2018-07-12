@@ -12,7 +12,12 @@
         tools:layout="@layout/fragment_songs">
         <action
             android:id="@+id/action_navSongsFragment_to_refreshFragment"
-            app:destination="@id/refreshFragment" />
+            app:destination="@id/refreshFragment">
+            <argument
+                android:name="btn_color"
+                android:defaultValue="0"
+                app:type="integer" />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/navAlbumsFragment"
@@ -21,7 +26,12 @@
         tools:layout="@layout/fragment_albums">
         <action
             android:id="@+id/action_navAlbumsFragment_to_refreshFragment"
-            app:destination="@id/refreshFragment" />
+            app:destination="@id/refreshFragment">
+            <argument
+                android:name="btn_color"
+                android:defaultValue="0"
+                app:type="integer" />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/navArtistsFragment"
@@ -30,7 +40,12 @@
         tools:layout="@layout/fragment_artists">
         <action
             android:id="@+id/action_navArtistsFragment_to_refreshFragment"
-            app:destination="@id/refreshFragment" />
+            app:destination="@id/refreshFragment">
+            <argument
+                android:name="btn_color"
+                android:defaultValue="0"
+                app:type="integer" />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/refreshFragment"

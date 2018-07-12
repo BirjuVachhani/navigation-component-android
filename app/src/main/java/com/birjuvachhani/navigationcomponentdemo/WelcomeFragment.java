@@ -18,6 +18,11 @@ public class WelcomeFragment extends android.support.v4.app.Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_welcome, container, false);
         tvName = view.findViewById(R.id.tvName);
+        if (getArguments() != null) {
+            PassArgumentsFragmentArgs args = PassArgumentsFragmentArgs.fromBundle(getArguments());
+            tvName.setText(args.getName());
+        }
+
         return view;
     }
 }

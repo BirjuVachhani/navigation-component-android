@@ -31,11 +31,12 @@ public class PassArgumentsFragment extends android.support.v4.app.Fragment {
         fabNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String name=etName.getText().toString();
-                if(TextUtils.isEmpty(name)) return;
-                Bundle args = new Bundle();
-                args.putString("name",name);
-                Navigation.findNavController(view).navigate(R.id.);
+                String name = etName.getText().toString();
+                if (TextUtils.isEmpty(name)) return;
+                PassArgumentsFragmentDirections.Action_passArgumentsFragment_to_welcomeFragment action
+                        = PassArgumentsFragmentDirections.action_passArgumentsFragment_to_welcomeFragment();
+                PassArgumentsFragmentArgs args = new PassArgumentsFragmentArgs.Builder().setName(name).build();
+                Navigation.findNavController(view).navigate(R.id.welcomeFragment, args.toBundle());
             }
         });
         return view;

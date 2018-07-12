@@ -19,6 +19,21 @@ public class ArtistsFragment extends android.support.v4.app.Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_artists, container, false);
         Button btnRefresh = view.findViewById(R.id.btnRefresh);
+        btnRefresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavOptions options = new NavOptions.Builder()
+                        .setEnterAnim(R.anim.slide_in_right)
+                        .setExitAnim(R.anim.slide_out_left)
+                        .setPopEnterAnim(R.anim.slide_in_left)
+                        .setPopExitAnim(R.anim.slide_out_right)
+                        .build();
+                ArtistsFragmentDirections.Action_navArtistsFragment_to_refreshFragment action
+                        = new ArtistsFragmentDirections.Action_navArtistsFragment_to_refreshFragment();
+                action.setBtn_color(getResources().getColor(android.R.color.holo_red_light));
+                Navigation.findNavController(view).navigate(action, options);
+            }
+        });
         return view;
     }
 }

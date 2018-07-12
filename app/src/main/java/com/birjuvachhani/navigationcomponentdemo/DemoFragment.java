@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import androidx.navigation.NavOptions;
 import androidx.navigation.Navigation;
 
 public class DemoFragment extends Fragment {
@@ -30,7 +31,7 @@ public class DemoFragment extends Fragment {
         btnDeepLink = view.findViewById(R.id.btnDeepLinking);
         btnNavigationToDestination = view.findViewById(R.id.btnNavigationUsingDestination);
         btnNavigationWithAction = view.findViewById(R.id.btnNavigationWithAction);
-        btnSafeArguments = view.findViewById(R.id.btnSafeArguments);
+        btnSafeArguments = view.findViewById(R.id.btnPassArguments);
 
         btnNavigationToDestination.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +44,8 @@ public class DemoFragment extends Fragment {
 
         btnBottomBarNavigation.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_navDemoFrag_to_bottomNavigationActivity));
         btnSafeArguments.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_navDemoFrag_to_safeArgumentsFragment));
+
+        btnDeepLink.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_navDemoFrag_to_deepLinkFragment));
         return view;
     }
 }

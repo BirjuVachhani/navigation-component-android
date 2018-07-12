@@ -43,7 +43,12 @@
             app:destination="@id/bottomNavigationActivity" />
         <action
             android:id="@+id/action_navDemoFrag_to_safeArgumentsFragment"
-            app:destination="@id/safeArgumentsFragment" />
+            app:destination="@id/passArgumentsFragment" />
+        <action
+            android:id="@+id/action_navDemoFrag_to_deepLinkFragment"
+            app:destination="@id/deepLinkFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right" />
 
     </fragment>
     <activity
@@ -72,15 +77,35 @@
         android:id="@+id/passArgumentsFragment"
         android:name="com.birjuvachhani.navigationcomponentdemo.PassArgumentsFragment"
         android:label="Safe Arguments"
-        tools:layout="@layout/fragment_pass_arguments" />
+        tools:layout="@layout/fragment_pass_arguments">
+        <argument
+            android:name="name"
+            android:defaultValue="user"
+            app:type="string" />
+        <action
+            android:id="@+id/action_passArgumentsFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+
+        </action>
+    </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.birjuvachhani.navigationcomponentdemo.WelcomeFragment"
         android:label="Welcome"
-        tools:layout="@layout/fragment_pass_arguments" />
-    <fragment
-        android:id="@+id/welcomeFragment2"
-        android:name="com.birjuvachhani.navigationcomponentdemo.WelcomeFragment"
-        android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" />
+
+    <fragment
+        android:id="@+id/deepLinkFragment"
+        android:name="com.birjuvachhani.navigationcomponentdemo.DeepLinkFragment"
+        android:label="Deep Link"
+        tools:layout="@layout/fragment_deep_link">
+        <action
+            android:id="@+id/action_deepLinkFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+
 </navigation>

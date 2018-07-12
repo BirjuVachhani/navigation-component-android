@@ -26,8 +26,21 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="refresh">Refresh</string>
     <string name="songs">Songs</string>
     <string name="albums">Albums</string>
     <string name="artists">Artists</string>
+    <string name="no_settings_available_currently">No settings available currently</string>
+    <string name="no_files_found">No music files found on this device please refresh to scan again</string>
+    <string name="refresh">Refresh</string>
+    <string name="create_deep_link_notification">Create Deep Link Notification</string>
+    <string name="navigation_to_destination">Navigation To Destination</string>
+    <string name="navigation_with_action">Navigation With Action</string>
+    <string name="bottom_bar_navigation">Bottom Bar Navigation</string>
+    <string name="deep_links">Deep Links</string>
+    <string name="pass_arguments">Pass Arguments</string>
+    <string name="view_demo">View Demo</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="go_back">Go Back</string>
+    <string name="scan_completed_no_files_found_from_device_storage">Scan completed. No files found from device storage</string>
+    <string name="you_are_currently_viewing_example_of_how_pass_arguments_between_fragments">You are currently viewing example of how pass arguments between fragments</string>
 </resources>

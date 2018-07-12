@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -25,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Songs"
+        android:text="@string/songs"
         android:textColor="@color/textPrimary"
         android:textSize="@dimen/_24sdp"
         android:textStyle="bold"
@@ -42,7 +41,7 @@
         android:layout_marginTop="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_32sdp"
         android:gravity="center"
-        android:text="No music files found on this device please refresh to scan again"
+        android:text="@string/no_files_found"
         android:textAlignment="center"
         android:textColor="@color/textSecondary"
         app:layout_constraintBottom_toTopOf="@+id/btnRefresh"
@@ -58,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_8sdp"
         android:backgroundTint="@android:color/holo_blue_dark"
-        android:text="Refresh"
+        android:text="@string/refresh"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

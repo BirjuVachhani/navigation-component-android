@@ -39,13 +39,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabNext"
+    <Button
+        android:id="@+id/btnCreateDeepLinkNotification"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/_56sdp"
-        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
-        app:fabSize="normal"
+        android:backgroundTint="@android:color/background_dark"
+        android:text="@string/create_deep_link_notification"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_16sdp"
         android:layout_marginEnd="@dimen/_16sdp"
-        android:text="Bottom Bar Navigation"
+        android:text="@string/bottom_bar_navigation"
         app:layout_constraintBottom_toTopOf="@+id/btnNavigationUsingDestination"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_16sdp"
         android:layout_marginEnd="@dimen/_16sdp"
-        android:text="Navigation To Destination"
+        android:text="@string/navigation_to_destination"
         app:layout_constraintBottom_toTopOf="@+id/btnNavigationWithAction"
         app:layout_constraintTop_toBottomOf="@+id/btnBottomBarNavigation"
         tools:layout_editor_absoluteX="8dp" />
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_16sdp"
         android:layout_marginEnd="@dimen/_16sdp"
-        android:text="Navigation With Action"
+        android:text="@string/navigation_with_action"
         app:layout_constraintBottom_toTopOf="@+id/btnDeepLinking"
         app:layout_constraintTop_toBottomOf="@+id/btnNavigationUsingDestination"
         tools:layout_editor_absoluteX="8dp" />
@@ -49,19 +49,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_16sdp"
         android:layout_marginEnd="@dimen/_16sdp"
-        android:text="Deep Links"
-        app:layout_constraintBottom_toTopOf="@+id/btnSafeArguments"
+        android:text="@string/deep_links"
+        app:layout_constraintBottom_toTopOf="@+id/btnPassArguments"
         app:layout_constraintTop_toBottomOf="@+id/btnNavigationWithAction"
         tools:layout_editor_absoluteX="8dp" />
 
     <Button
-        android:id="@+id/btnSafeArguments"
+        android:id="@+id/btnPassArguments"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_16sdp"
         android:layout_marginEnd="@dimen/_16sdp"
-        android:text="Safe Arguments"
+        android:text="@string/pass_arguments"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnDeepLinking"
         tools:layout_editor_absoluteX="8dp" />

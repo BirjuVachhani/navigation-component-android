@@ -48,7 +48,7 @@
         android:paddingStart="@dimen/_16sdp"
         android:backgroundTint="@android:color/holo_purple"
         android:paddingEnd="@dimen/_16sdp"
-        android:text="Go Back"
+        android:text="@string/go_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvDesc" />

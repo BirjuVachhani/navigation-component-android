@@ -1,11 +1,13 @@
 package com.birjuvachhani.navigationcomponentdemo;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import androidx.navigation.NavAction;
 import androidx.navigation.NavOptions;
 import androidx.navigation.Navigation;
 
@@ -16,7 +18,7 @@ public class SongsFragment extends android.support.v4.app.Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_songs, container, false);
         Button btnRefresh = view.findViewById(R.id.btnRefresh);
         btnRefresh.setOnClickListener(new View.OnClickListener() {
@@ -28,7 +30,10 @@ public class SongsFragment extends android.support.v4.app.Fragment {
                         .setPopEnterAnim(R.anim.slide_in_left)
                         .setPopExitAnim(R.anim.slide_out_right)
                         .build();
-                Navigation.findNavController(view).navigate(R.id.sampleFragmentTwo, null, options);
+                SongsFragmentDirections.Action_navSongsFragment_to_refreshFragment action
+                        = new SongsFragmentDirections.Action_navSongsFragment_to_refreshFragment();
+                action.setBtn_color(getResources().getColor(android.R.color.holo_blue_light));
+                Navigation.findNavController(view).navigate(action, options);
             }
         });
         return view;

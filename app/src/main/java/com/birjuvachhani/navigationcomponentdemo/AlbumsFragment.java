@@ -28,9 +28,14 @@ public class AlbumsFragment extends android.support.v4.app.Fragment {
                         .setPopEnterAnim(R.anim.slide_in_left)
                         .setPopExitAnim(R.anim.slide_out_right)
                         .build();
-                Navigation.findNavController(view).navigate(R.id.sampleFragmentTwo, null, options);
+                AlbumsFragmentDirections.Action_navAlbumsFragment_to_refreshFragment action
+                        = new AlbumsFragmentDirections.Action_navAlbumsFragment_to_refreshFragment();
+                action.setBtn_color(getResources().getColor(android.R.color.holo_purple));
+                Navigation.findNavController(view).navigate(action, options);
             }
         });
         return view;
     }
+
+
 }
